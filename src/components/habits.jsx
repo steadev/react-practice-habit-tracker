@@ -19,7 +19,7 @@ export default class Habits extends Component {
             />
           ))}
         </ul>
-        <div className="habits-reset" onClick={this.props.onResetAll}>
+        <div className="habits-reset" onClick={this.props.onReset}>
           Reset All
         </div>
       </>
