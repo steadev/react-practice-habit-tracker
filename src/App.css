@@ -37,6 +37,11 @@ button {
   padding-top: 2em;
 }
 
+.add-form {
+  display: flex;
+  margin-top: 40px;
+}
+
 .add-input {
   font-size: 2rem;
 }
