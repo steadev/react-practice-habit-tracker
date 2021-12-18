@@ -5,7 +5,7 @@ import HabitAddForm from "./habitAddForm";
 export default class Habits extends Component {
   render() {
     return (
-      <>
+      <div className="habits">
         <HabitAddForm onAdd={this.props.onAdd} />
         <ul>
           {this.props.habits.map((habit) => (
@@ -22,7 +22,7 @@ export default class Habits extends Component {
         <div className="habits-reset" onClick={this.props.onReset}>
           Reset All
         </div>
-      </>
+      </div>
     );
   }
 }
