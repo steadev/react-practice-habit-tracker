@@ -1,0 +1,12 @@
+.habits {
+  padding: 0.5em;
+  padding-top: 2em;
+}
+
+.habitsReset {
+  width: fit-content;
+  font-size: 1.5rem;
+  padding: 0.2em 1em;
+  background-color: green;
+  color: white;
+}

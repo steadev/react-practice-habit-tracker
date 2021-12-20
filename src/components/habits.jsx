@@ -1,11 +1,12 @@
 import React, { Component } from "react";
 import Habit from "./habit";
 import HabitAddForm from "./habitAddForm";
+import styles from "./habits.module.css";
 
 export default class Habits extends Component {
   render() {
     return (
-      <div className="habits">
+      <div className={styles.habits}>
         <HabitAddForm onAdd={this.props.onAdd} />
         <ul>
           {this.props.habits.map((habit) => (
@@ -19,7 +20,7 @@ export default class Habits extends Component {
             />
           ))}
         </ul>
-        <div className="habits-reset" onClick={this.props.onReset}>
+        <div className={styles.habitsReset} onClick={this.props.onReset}>
           Reset All
         </div>
       </div>
