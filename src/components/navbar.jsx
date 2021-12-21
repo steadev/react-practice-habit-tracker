@@ -1,14 +1,14 @@
-import React, { PureComponent } from "react";
+import React from "react";
 import styles from "./navbar.module.css";
 
-export default class Navbar extends PureComponent {
-  render() {
-    return (
-      <div className={styles.navbar}>
-        <i className={`fas fa-leaf ${styles.logo}`}></i>
-        <span className={styles.title}>Habit Tracker</span>
-        <span className={styles.count}>{this.props.totalCount}</span>
-      </div>
-    );
-  }
+const Navbar = (props) => {
+  return (
+    <div className={styles.navbar}>
+      <i className={`fas fa-leaf ${styles.logo}`}></i>
+      <span className={styles.title} onClick={handleClick}>Habit Tracker</span>
+      <span className={styles.count}>{props.totalCount}</span>
+    </div>
+  );
 }
+
+export default Navbar;
